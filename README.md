@@ -1,4 +1,4 @@
-Azure Integration Serives (AIS) offer a modern hybrid integration solutions. They integrate apps, data and processes. To get the best out of those services, this guide will highlight:
+Azure Integration Serives (AIS) offer a modern hybrid integration solutions. They integrate apps, data and processes across on-prem and cloud environments. To help create well-architected AIS solutions, this guide will highlight:
 1. The main components and interactions of an AIS solution
 2. The key design areas and decisions for AIS
 
