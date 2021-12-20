@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## Visual Guide: Azure Integration Services
 
-You can use the [editor on GitHub](https://github.com/melzayet/ais-visualized/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Azure Integration Serives (AIS) offer a modern hybrid integration solutions. They integrate apps, data and processes. To get the best out of those services, this guide will highlight:
+- The main components and interactions of an AIS solution
+- The key design areas and decisions for AIS
+- 
+### AIS in motion
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Image](src)
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/melzayet/ais-visualized/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Key Design Areas
+### 1. Resource Organization and Centricity
+### 2. Roles
+### 3. Connectivity
+### 4. Governance and patterns
+### 5. Observability
