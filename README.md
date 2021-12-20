@@ -6,7 +6,7 @@ Azure Integration Serives (AIS) offer a modern hybrid integration solutions. The
 
 ## 1. AIS in motion
 
-![Image](images/motion.png)
+![Image](images/motion.png =1280x720)
 
 ## 2. Key Design Areas
 ### Resource Organization and Centricity
