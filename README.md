@@ -8,7 +8,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 <img src='images/motion.svg'>
 
-  ##### Provision infrastructure, policy and config as code [Cloud Engineers]
+##### Provision infrastructure, policy and config as code [Cloud Engineers]
   - Infrastructure as Code templates: ARM, Bicep or Terraform
   - Azure Policies to govern which connectors to allow, and what configuration APIs or Logic Apps should have
   - Configure settings and parameters for dev, staging and prod environments
