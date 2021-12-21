@@ -8,31 +8,31 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 <img src='images/motion.svg'>
 
-- Provision infrastructure, policy and config as code [Cloud Engineers]
-    - Infrastructure as Code templates: ARM, Bicep or Terraform
-    - Azure Policies to govern which connectors to allow, and what configuration APIs or Logic Apps should have
-    - Configure settings and parameters for dev, staging and prod environments
-    - Central role or embedded in several project/product teams
+  ##### Provision infrastructure, policy and config as code [Cloud Engineers]
+  - Infrastructure as Code templates: ARM, Bicep or Terraform
+  - Azure Policies to govern which connectors to allow, and what configuration APIs or Logic Apps should have
+  - Configure settings and parameters for dev, staging and prod environments
+  - Central role or embedded in several project/product teams
 
-- Build and Publish APIs [API Developers]
+##### Build and Publish APIs [API Developers]
 
-- Build Workflows [Integration Specialists]
+##### Build Workflows [Integration Specialists]
 
-- Discover and use APIs [Partners and App Developers]
+##### Discover and use APIs [Partners and App Developers]
 
-- Provide a secure Landing Zone [Platform Engineers]
+##### Provide a secure Landing Zone [Platform Engineers]
 
 ## 2. Key Design Areas
 ### Resource Organization and Centricity
-Consideration: Do I want integration workloads to be centrally operated and managed in one subscription?
+- Consideration: Do I want integration workloads to be centrally operated and managed in one subscription?
 Here are the pro/cons:
-- Centralized Integration
-- Decentralized Integration
+    - Centralized Integration
+    - Decentralized Integration
 
 ### Roles
-Consideration: Which teams/people will play the above mentioned roles?
+- Consideration: Which teams/people will play the above mentioned roles?
 
-Consideration: What permissions will each role need?
+- Consideration: What permissions will each role need?
 
 ### Connectivity
 - Internal
