@@ -2,8 +2,9 @@ Azure Integration Serives (AIS) offer a modern hybrid integration solution. They
 
 To help create well-architected AIS solutions, this guide will highlight:
 
-1. The main components and interactions of an AIS solution
-2. The key design areas and decisions for AIS
+1. [The main components and interactions of an AIS solution](#1-ais-in-motion)
+2. [The key design areas and decisions for AIS](#2-key-design-areas)
+3. [Demos to help get started](#3-key-demos)
 
 ## 1. AIS in motion
 
@@ -26,13 +27,13 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Build Workflows [Integration Specialists]
 
-- Integration Specialists build Logic Apps workflows through code or visually in IDE or Azure Portal. More details can be found [here](./workflow-dev.html)
+- Integration Specialists build Logic Apps workflows through code or visually in IDE or Azure Portal. [More details can be found here](./workflow-dev.html)
 
 - After local testing they push their workflows to a Git repository
 - A CI/CD pipeline pushes the workflows through checks and gates passing by Pre-Prod environment into a Prod environment. The pipeline definition can be created by Cloud Engineers
 - Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or Events
 - Besides workflows, applications and systems can be integrated directly through queues, topics and events. However, adding Logic Apps workflows to the mix offers convenience of message pushing rather than polling, as well as low-code processing
-- Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts. More details can be found [here](./workflow-monitoring.html)
+- Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts. [More details can be found here](./workflow-monitoring.html)
 
 ### Discover and use APIs [Partners and App Developers]
 
@@ -56,9 +57,9 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 - Consideration: Will I have one central Integration team/environment(subscription) or will I push some integrations down to app or business teams?
 
-- There are pro/cons to each direction:
+  - There are pro/cons to each direction:
 
-  - Centralized Integration
+    - Centralized Integration
     - Easier to maintain and monitor
     - Can hit platform limits faster
     - Some roles or resources can introduce bottlenecks or single points of failure
@@ -72,7 +73,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 - Consideration: Will the "Ops" roles like Cloud Engineer and "Dev" roles like Integration Specialists be part of the same team?
 
-- Usually the organization DevOps maturity level can play a role in defining teams structure and responsibilities
+  - Usually the organization DevOps maturity level can play a role in defining teams structure and responsibilities
 
 - Consideration: Will the "Ops" roles be replicated across team in case of a hybrid/decentralized environment?
 
@@ -102,3 +103,9 @@ To help create well-architected AIS solutions, this guide will highlight:
 - Consideration: Do our technical teams have enough visibility into systems and integration workloads health?
 - Consideration: Do business teams have the right access into business activities health with an option to re-submit or retry failed workflow?
 - Consideration: Do we have the right alerts and are they reaching the right audience, through the right channel, and at the right frequency?
+
+## 3. Key Demos
+
+- [API Management DevOps Resource Kit](https://github.com/Azure/azure-api-management-devops-resource-kit)
+- [Logic Apps (Workflows) DevOps - Credits: Bec Lyons](https://github.com/Bec-Lyons/LogicAppsDevOps)
+- [Logic Apps Observability - Credits: Paco de la Cruz](https://github.com/pacodelacruz/observability-pubsub-logicapps)
