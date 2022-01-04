@@ -28,7 +28,6 @@ To help create well-architected AIS solutions, this guide will highlight:
 ### Build Workflows [Integration Specialists]
 
 - Integration Specialists build Logic Apps workflows through code or visually in IDE or Azure Portal. [More details can be found here](./workflow-dev.html)
-
 - After local testing they push their workflows to a Git repository
 - A CI/CD pipeline pushes the workflows through checks and gates passing by Pre-Prod environment into a Prod environment. The pipeline definition can be created by Cloud Engineers
 - Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or Events
@@ -56,7 +55,6 @@ To help create well-architected AIS solutions, this guide will highlight:
 ### Resource Organization and Centricity
 
 - Consideration: Will I have one central Integration team/environment(subscription) or will I push some integrations down to app or business teams?
-
   - There are pro/cons to each direction:
 
     - Centralized Integration
