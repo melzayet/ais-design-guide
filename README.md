@@ -93,8 +93,9 @@ To help create well-architected AIS solutions, this guide will highlight:
   - VPN or ExpressRoute: How are on-prem and Azure networks connected?
   - Firewall: Do I need to reach Azure endpoints or egress to internet/on-prem through firewalls?
 
-### Governance and patterns
+### Compliance, Governance and Design Patterns
 
+- Consideration: Do we have compliance requirements to isolate workloads (within an ASE: App Service Environment) from other cloud tenants?
 - Consideration: Do we have a list of automated governance policies that get reviewed regularly?
 - Consideration: Do we have teams trained and in agreement on [Cloud Messaging Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging) and how to select the right integration technology?
 
@@ -109,6 +110,8 @@ To help create well-architected AIS solutions, this guide will highlight:
 - [API Management DevOps Resource Kit](https://github.com/Azure/azure-api-management-devops-resource-kit)
 - [Logic Apps (Workflows) DevOps - Credits: Bec Lyons](https://github.com/Bec-Lyons/LogicAppsDevOps)
 - [Logic Apps Observability - Credits: Paco de la Cruz](https://github.com/pacodelacruz/observability-pubsub-logicapps)
+- [Enterprise Scale: App Service Environment - Credits: Cynthia Kreng](https://github.com/cykreng/Enterprise-Scale-AppService)
+- [Enterprise Scale: API Management - Credits: Cynthia Kreng](https://github.com/cykreng/Enterprise-Scale-APIM)
 
 ## Feedback and Contribution
 
