@@ -109,3 +109,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 - [API Management DevOps Resource Kit](https://github.com/Azure/azure-api-management-devops-resource-kit)
 - [Logic Apps (Workflows) DevOps - Credits: Bec Lyons](https://github.com/Bec-Lyons/LogicAppsDevOps)
 - [Logic Apps Observability - Credits: Paco de la Cruz](https://github.com/pacodelacruz/observability-pubsub-logicapps)
+
+## Feedback and Contribution
+
+For feedback and contributions please open a [GitHub issue](https://github.com/melzayet/ais-design-guide/issues)

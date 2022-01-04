@@ -1,4 +1,4 @@
-## Developing Integration workflows using Logic Apps (Standard)
+Developing Integration workflows using Logic Apps (Standard)
 
 ### 1. Local Authoring using VS Code
 
