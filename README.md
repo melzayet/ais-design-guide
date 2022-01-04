@@ -12,28 +12,31 @@ To help create well-architected AIS solutions, this guide will highlight:
 ### Provision infrastructure, policy and config as code [Cloud Engineers]
 
 - Cloud Engineers provision infrastructure ideally through code: ARM, Bicep or Terraform
-- Infrastructure includes but not limited to API Management instance, Logic Apps environment, Service Bus Namespace, Azure Monitor dashboards and alerts
-- Azure Policies are created to govern use. For example, one policy can block access to specific connectors like Dropbox. Another policy could allow only private endpoints when accessing workflows or APIs
-- Infrastructure defined as code does have settings and parameters set per environment (dev, staging and prod environment)
-- Permissions and AAD roles are defined for API Developers, App Developers, Integration Specialists and possible partners
+- Infrastructure resources include but not limited to API Management instance, Logic Apps environment, Service Bus Namespace, Azure Monitor dashboards and alerts
+- Azure Policies are created to govern usage. For example, one policy can block access to specific connectors like Dropbox. Another policy could restrict network access to workflows or APIs through private endpoints only
+- Infrastructure defined as code has settings and parameters set per environment (dev, staging and prod environment)
+- Permissions and AAD roles are defined for API Developers, App Developers, Integration Specialists and possibly partners
 
 ### Build and Publish APIs [API Developers]
 
-- API Developers are ideally given access dev or pre-prod API Management instances
+- API Developers are ideally given access to Dev or Pre-Prod API Management instances
 - They author APIs through IDEs or using Azure Portal
-- They publish their APIs to the prod API Management instance through Git Pull Requests or through pre-defined permissions to specific APIs
-- A CI/CD pipeline pushes the API definitions and policies into production passing by any needed approvals or pre-prod environments. The pipeline definition can be created by Cloud Engineers
+- They publish their APIs to the Prod API Management instance through Git Pull Requests or through pre-defined permissions to specific APIs
+- A CI/CD pipeline pushes the API definitions and policies into production passing through any needed approvals or Pre-Prod environments. The pipeline definition can be created by Cloud Engineers
 
 ### Build Workflows [Integration Specialists]
 
-- Integration Specialists build workflows through code or visually in IDE or Azure Portal
+- Integration Specialists build Logic Apps workflows through code or visually in IDE or Azure Portal. More details can be found [here](./workflow-dev.html)
+
 - After local testing they push their workflows to a Git repository
-- A CI/CD pipeline pushes the workflows through checks and gates passing by pre-prod environment into a prod environment. The pipeline definition can be created by Cloud Engineers
-- Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or events
+- A CI/CD pipeline pushes the workflows through checks and gates passing by Pre-Prod environment into a Prod environment. The pipeline definition can be created by Cloud Engineers
+- Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or Events
+- Besides workflows, applications and systems can be integrated directly through queues, topics and events. However, adding Logic Apps workflows to the mix offers convenience of message pushing rather than polling, as well as low-code processing
+- Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts. More details can be found [here](./workflow-monitoring.html)
 
 ### Discover and use APIs [Partners and App Developers]
 
-- App Developers in the organization or in partner organization might need access to specific APIs
+- App Developers in the organization or in a partner organization might need access to specific APIs
 - The APIs defined by API Developers are published to a Developer Portal
 - App Developers can discover APIs, understand request and response payloads and try out the APIs
 - App Developers consume their APIs in their applications
@@ -51,7 +54,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Resource Organization and Centricity
 
-- Consideration: Will I have one central Integration environment (subscription) or will I push some integrations down to app or business teams?
+- Consideration: Will I have one central Integration team/environment(subscription) or will I push some integrations down to app or business teams?
 
 - There are pro/cons to each direction:
 
@@ -61,22 +64,23 @@ To help create well-architected AIS solutions, this guide will highlight:
     - Some roles or resources can introduce bottlenecks or single points of failure
   - Hybrid/Decentralized Integration
     - Provides more agility and autonomy to app/business teams
+    - Might be an overkill for a small organization or low number of integration workloads
     - Clear ownership of data and integrations by app/business teams
     - Requires more standardization and automation across app/business teams
 
-### Roles
+### Security and Roles
 
-- Consideration: Will the above roles like Cloud Engineer and Integration Specialists be part of one team?
+- Consideration: Will the "Ops" roles like Cloud Engineer and "Dev" roles like Integration Specialists be part of the same team?
 
-- Usually the organization DevOps maturity can play a role in defining teams structure and responsibilities
+- Usually the organization DevOps maturity level can play a role in defining teams structure and responsibilities
 
-- Consideration: Will those roles be replicated across team in case of a hybrid/decentralized environment?
+- Consideration: Will the "Ops" roles be replicated across team in case of a hybrid/decentralized environment?
 
-- Consideration: Do I have members with skills to take more than one role simultaneously?
+- Consideration: Do I have members with skills to play more than one role simultaneously?
 
 - Consideration: What RBAC permissions will be given to each role and what system identities (Managed Identities) are needed
 
-- Consideration: What authentication mechanism will be used: OAuth2, Managed Identities...etc.?
+- Consideration: What authentication mechanisms will be used: OAuth2, Managed Identities...etc.?
 
 ### Connectivity
 
@@ -90,8 +94,8 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Governance and patterns
 
-- Consideration: Do we have a list of automated governance policies and revise regularly?
-- Consideration: Do we have teams trained and in agreement on Cloud Messaging Patterns on how we select the right integration technology?
+- Consideration: Do we have a list of automated governance policies that get reviewed regularly?
+- Consideration: Do we have teams trained and in agreement on Cloud Messaging Patterns on how to select the right integration technology?
 
 ### Observability
 
