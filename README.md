@@ -4,7 +4,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 1. [The main components and interactions of an AIS solution](#1-ais-in-motion)
 2. [The key design areas and decisions for AIS](#2-key-design-areas)
-3. [Demos to help get started](#3-key-demos)
+3. [Demos to help teams get started](#3-key-demos)
 
 ## 1. AIS in motion
 
@@ -96,7 +96,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 ### Governance and patterns
 
 - Consideration: Do we have a list of automated governance policies that get reviewed regularly?
-- Consideration: Do we have teams trained and in agreement on Cloud Messaging Patterns on how to select the right integration technology?
+- Consideration: Do we have teams trained and in agreement on [Cloud Messaging Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging) and how to select the right integration technology?
 
 ### Observability
 
@@ -112,4 +112,4 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ## Feedback and Contribution
 
-For feedback and contributions please open a [GitHub issue](https://github.com/melzayet/ais-design-guide/issues)
+For feedback and contributions, please open a [GitHub issue](https://github.com/melzayet/ais-design-guide/issues)
