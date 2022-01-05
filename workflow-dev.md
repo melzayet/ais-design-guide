@@ -1,5 +1,7 @@
 Developing Integration workflows using Logic Apps (Standard)
 
+[back](./)
+
 ### 1. Local Authoring using VS Code
 
 - New workflows can be created through Azure VS Code plug-in

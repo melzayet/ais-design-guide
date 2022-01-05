@@ -1,5 +1,7 @@
 Monitoring Integration workflows - Logic Apps (Standard)
 
+[back](./)
+
 ### 1. Query logs and metrics
 
 - Logs can be queried by workflow client tracking id, for example: username or email
