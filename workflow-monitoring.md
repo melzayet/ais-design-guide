@@ -1,4 +1,4 @@
-Monitoring Integration workflows - Logic Apps (Standard)
+**Monitoring Integration workflows - Logic Apps (Standard)**
 
 [back](./)
 
