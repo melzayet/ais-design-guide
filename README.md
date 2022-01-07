@@ -1,6 +1,6 @@
 Azure Integration Serives (AIS) offer a modern hybrid integration solution. They integrate apps, data and processes across on-prem and cloud environments.
 
-The basic description and use cases of those services can be found in this [whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/azure-integration-services/Azure-Integration-Services-Whitepaper-v1-0.pdf)
+The basic description and use cases of those services can be found in this [whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/azure-integration-services/Azure-Integration-Services-Whitepaper-v1-0.pdf).
 
 To help create well-architected AIS solutions, this guide will highlight:
 
@@ -14,7 +14,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Provision infrastructure, policy and config as code [Cloud Engineers]
 
-- Cloud Engineers provision infrastructure ideally through code: ARM, Bicep or Terraform
+- Cloud Engineers provision infrastructure resources; ideally through code: ARM, Bicep or Terraform templates
 - Infrastructure resources include but not limited to API Management instance, Logic Apps environment, Service Bus Namespace, Azure Monitor dashboards and alerts
 - Azure Policies are created to govern usage. For example, one policy can block access to specific connectors like Dropbox. Another policy could restrict network access to workflows or APIs through private endpoints only
 - Infrastructure defined as code has settings and parameters set per environment (dev, staging and prod environment)
@@ -34,7 +34,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 - A CI/CD pipeline pushes the workflows through checks and gates passing by Pre-Prod environment into a Prod environment. The pipeline definition can be created by Cloud Engineers
 - Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or Events
 - Besides workflows, applications and systems can be integrated directly through queues, topics and events. However, adding Logic Apps workflows to the mix offers convenience of message pushing rather than polling, as well as low-code processing
-- Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts. [More details can be found here](./workflow-monitoring.html)
+- Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts created through Cloud Engineers' templates. [More details can be found here](./workflow-monitoring.html)
 
 ### Discover and use APIs [Partners and App Developers]
 
@@ -56,18 +56,18 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Resource Organization and Centricity
 
-- Consideration: Will I have one central Integration team/environment(subscription) or will I push some integrations down to app or business teams?
+- Consideration: Will I have a single central integration team / environment(subscription) or will I push some integrations down to app or business teams? or is it both?
   - There are pro/cons to each direction:
 
     - Centralized Integration
-    - Easier to maintain and monitor
-    - Can hit platform limits faster
-    - Some roles or resources can introduce bottlenecks or single points of failure
-  - Hybrid/Decentralized Integration
-    - Provides more agility and autonomy to app/business teams
-    - Might be an overkill for a small organization or low number of integration workloads
-    - Clear ownership of data and integrations by app/business teams
-    - Requires more standardization and automation across app/business teams
+      - Easier to maintain and monitor
+      - Can hit platform limits faster
+      - Some roles or resources can introduce bottlenecks or single points of failure
+    - Hybrid/Decentralized Integration
+      - Provides more agility and autonomy to app/business teams
+      - Clear ownership of data and integrations by app/business teams
+      - Might be an overkill for a small organization or low number of integration workloads
+      - Requires more standardization and automation across app/business teams
 
 ### Security and Roles
 
@@ -79,7 +79,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 - Consideration: Do I have members with skills to play more than one role simultaneously?
 
-- Consideration: What RBAC permissions will be given to each role and what system identities (Managed Identities) are needed
+- Consideration: What RBAC permissions will be given to each role and what system identities (Managed Identities) are needed?
 
 - Consideration: What authentication mechanisms will be used: OAuth2, Managed Identities...etc.?
 
