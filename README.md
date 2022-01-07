@@ -86,31 +86,44 @@ To help create well-architected AIS solutions, this guide will highlight:
 ### Connectivity
 
 - Consideration: What are the network access requirements? Is all traffic coming from on-prem or from with Azure?
+
 - Different Azure technologies will help in each network access use case:
   - Private Endpoint: Workflows or APIs expose private IP endpoints
+
   - Private DNS: Because some endpoints expose private IPs, a DNS resolution mechanism from within Azure or on-prem is needed
+
   - VNET integration: If workflows or APIs require access to virtual network resources, they need to be injected into the same or a peered virtual network
+
   - VPN or ExpressRoute: How are on-prem and Azure networks connected?
+
   - Firewall: Do I need to reach Azure endpoints or egress to internet/on-prem through firewalls?
 
 ### Compliance, Governance and Design Patterns
 
 - Consideration: Do we have compliance requirements to isolate workloads (within an ASE: App Service Environment) from other cloud tenants?
+
 - Consideration: Do we have a list of automated governance policies that get reviewed regularly?
+
 - Consideration: Do we have teams trained and in agreement on [Cloud Messaging Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/messaging) and how to select the right integration technology?
 
 ### Observability
 
 - Consideration: Do our technical teams have enough visibility into systems and integration workloads health?
+
 - Consideration: Do business teams have the right access into business activities health with an option to re-submit or retry failed workflow?
+
 - Consideration: Do we have the right alerts and are they reaching the right audience, through the right channel, and at the right frequency?
 
 ## 3. Key Demos
 
 - [API Management DevOps Resource Kit](https://github.com/Azure/azure-api-management-devops-resource-kit)
+
 - [Logic Apps (Workflows) DevOps - Credits: Bec Lyons](https://github.com/Bec-Lyons/LogicAppsDevOps)
+
 - [Logic Apps Observability - Credits: Paco de la Cruz](https://github.com/pacodelacruz/observability-pubsub-logicapps)
+
 - [Enterprise Scale: App Service Environment - Credits: Cynthia Kreng](https://github.com/cykreng/Enterprise-Scale-AppService)
+
 - [Enterprise Scale: API Management - Credits: Cynthia Kreng](https://github.com/cykreng/Enterprise-Scale-APIM)
 
 ## Feedback and Contribution
