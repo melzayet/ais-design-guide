@@ -58,7 +58,6 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 - Consideration: Will I have a single central integration team / environment(subscription) or will I push some integrations down to app or business teams? or is it both?
   - There are pro/cons to each direction:
-
     - Centralized Integration
       - Easier to maintain and monitor
       - Can hit platform limits faster
