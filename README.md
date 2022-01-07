@@ -1,10 +1,12 @@
 Azure Integration Serives (AIS) offer a modern hybrid integration solution. They integrate apps, data and processes across on-prem and cloud environments.
 
+The basic description and use cases of those services can be found in this [whitepaper](https://azure.microsoft.com/mediahandler/files/resourcefiles/azure-integration-services/Azure-Integration-Services-Whitepaper-v1-0.pdf)
+
 To help create well-architected AIS solutions, this guide will highlight:
 
 1. [The main components and interactions of an AIS solution](#1-ais-in-motion)
 2. [The key design areas and decisions for AIS](#2-key-design-areas)
-3. [Demos to help teams get started](#3-key-demos)
+3. [Key demos to help teams get started](#3-key-demos)
 
 ## 1. AIS in motion
 
