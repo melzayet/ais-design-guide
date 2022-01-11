@@ -85,7 +85,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 ### Connectivity
 
-[More details can be found here](./logic-apps-std-networking.html)
+- [More details on Logic Apps networking can be found here](./logic-apps-std-networking.html)
 
 - Consideration: What are the network access requirements? Is all traffic coming from on-prem or from with Azure?
 
