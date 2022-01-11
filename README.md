@@ -35,6 +35,7 @@ To help create well-architected AIS solutions, this guide will highlight:
 - Workflows use connectors but also can consume organization APIs or communicate to other systems through Messages or Events
 - Besides workflows, applications and systems can be integrated directly through queues, topics and events. However, adding Logic Apps workflows to the mix offers convenience of message pushing rather than polling, as well as low-code processing
 - Integration Specialists can use Azure Monitor to monitor and get alerts on the system and business operations. This is in addition to pre-defined dashboards and alerts created through Cloud Engineers' templates. [More details can be found here](./workflow-monitoring.html)
+- [More details on Logic Apps Standard can be found here](./logic-apps-std-overview.html)
 
 ### Discover and use APIs [Partners and App Developers]
 
@@ -83,6 +84,8 @@ To help create well-architected AIS solutions, this guide will highlight:
 - Consideration: What authentication mechanisms will be used: OAuth2, Managed Identities...etc.?
 
 ### Connectivity
+
+[More details can be found here](./logic-apps-std-networking.html)
 
 - Consideration: What are the network access requirements? Is all traffic coming from on-prem or from with Azure?
 
