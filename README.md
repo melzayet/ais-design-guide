@@ -128,6 +128,8 @@ To help create well-architected AIS solutions, this guide will highlight:
 
 - [Enterprise Scale: API Management - Credits: Cynthia Kreng](https://github.com/cykreng/Enterprise-Scale-APIM)
 
+- [iPaaS Enterprise Starter - Bicep](https://github.com/azure-modern-apps/enterprise-integration-starter)
+
 ## Feedback and Contribution
 
 For feedback and contributions, please open a [GitHub issue](https://github.com/melzayet/ais-design-guide/issues)
